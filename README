@@ -1,5 +1,7 @@
-All libraries necessary are included, but to install the Teensy libraries, instead please refer to Teensy installation tutorial here: https://www.pjrc.com/teensy/tutorial.html 
+The DiGee MCMD is configured to run on Teensy 4.0.
 
-This will install a large number of libraries including those necessary such as SPI.h / Wire.h and Bounce2.h
+Implementing the use of the IntervalTimer class for Teensy https://www.pjrc.com/teensy/td_timing_IntervalTimer.html
 
-The libraries included can be installed easily using the Arduino IDE Library Manager, which is recommended over using the included libraries. They are included just in case.
+All libraries necessary are included, except core Teensy libraries, instead please refer to Teensy installation tutorial here: https://www.pjrc.com/teensy/tutorial.html 
+
+The non-Teensy libraries included can also be installed using the Arduino IDE Library Manager, which is recommended instead. They are included just in case.
