@@ -214,21 +214,21 @@ struct OLEDControl {
     numUndrawnRects++;
   }
 
-  // Draw Rects from array undrawnRects - Bare metal programming, idk bro
+  // Draw Rects from array undrawnRects - Bare metal programming
   void displayWindow(int16_t x, int16_t y, int16_t w, int16_t h) {
-    // 1. tell the chip which columns we care about
+    // Tell the chip which columns we care about
     display.ssd1306_command(SSD1306_COLUMNADDR);
     display.ssd1306_command(x);
     display.ssd1306_command(x + w - 1);
 
-    // 2. which pages (8-pixel high rows)
+    // Which pages (8-pixel high rows)
     uint8_t startPage = y >> 3;
     uint8_t endPage   = (y + h - 1) >> 3;
     display.ssd1306_command(SSD1306_PAGEADDR);
     display.ssd1306_command(startPage);
     display.ssd1306_command(endPage);
 
-    // 3. blast the bytes straight to the screen
+    // Blast the bytes to the screen
     Wire.beginTransmission(0x3C);   // library gives us the address
     Wire.write(0x40); // data stream marker
     for (uint8_t p = startPage; p <= endPage; ++p) {
