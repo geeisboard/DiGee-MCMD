@@ -1,5 +1,7 @@
 # DiGee MCMD
 
+https://github.com/geeisboard/DiGee-MCMD/blob/main/PCB3D.png?raw=true
+
 ## Introduction
 The DiGee MCMD is a polyrhythmic midi clock device that allows you to play two midi sequenced devices in synchronisation, one device as a constant 'master clock' and the second as a polyrhythmic rhythm of the master clock.
 
