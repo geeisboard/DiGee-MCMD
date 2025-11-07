@@ -64,7 +64,7 @@ Button2 encButton;
 ////////////// ROTARY ENCODER //////////////
 ////////////////////////////////////////////
 
-struct Counter{
+struct Counter {
   int bpm = 120;
   int bpmPoly = 120;
   int min = 60;
